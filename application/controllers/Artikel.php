@@ -7,12 +7,12 @@ class Artikel extends CI_Controller {
 
 function __construct(){
 	parent::__construct();
-	// $this->load->model('Penilaian_m', 'penilaian');
+	$this->load->model('Artikel_m', 'artikel');
 }
 
 	public function index(){	
 		$data['content'] = 'admin/artikel/index';
-		// $data['penilaian'] = $this->dataap->getAllDataap();
+		$data['artikel'] = $this->artikel->getAllArtikel();
 		$this->load->view('admin/dashboard', $data);
 	}
 	 
@@ -22,12 +22,36 @@ function __construct(){
 		$this->load->view('admin/dashboard', $data);
 	}
 
+	public function store(){
+		$result = $this->dataap->saveArtikel();
+		if ($result) {
+			redirect('/admin/artikel/index');
+		}
+
+	}
+
 	public function edit(){
 		$data['content'] = 'admin/artikel/edit';
 		$data['header']	= "Ubah Artikel";
-		// $data['dataap'] = $this->dataap->getDataap($iddataap);
+		$data['artikel'] = $this->artikel->getArtikel($idart);
 		$this->load->view('admin/dashboard', $data);			
 	}
+
+	public function update($idart){
+		$result = $this->artikel->updateArtikel($idart);
+		if ($result) {
+			redirect('/admin/artikel/index');
+		}			
+
+	}	
+
+	public function delete($idart){
+		$result = $this->artikel->deleteArtikel($idart);
+		if ($result) {
+			redirect('/admin/artikel/index');
+		}			
+
+	}	
 
 }
 
