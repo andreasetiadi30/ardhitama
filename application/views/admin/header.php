@@ -100,6 +100,11 @@
                                             <span class="link-collapse">Settings</span>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="<?php echo site_url('logout');?>">
+                                            <span class="link-collapse">Logout</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
