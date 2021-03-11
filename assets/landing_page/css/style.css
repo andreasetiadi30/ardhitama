@@ -1082,6 +1082,38 @@ textarea.form-control {
   font-size: 14px;
   letter-spacing: .2em; }
 
+/* custom  */
+a:link {
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed; 
+  left: 0; 
+  bottom: 0; 
+  width: 100%; 
+  text-align: right; 
+  padding: 35px; 
+  z-index: 999999;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+.footer img {
+    animation: zoominoutsinglefeatured 2s infinite ;
+}
+/* custom  */
+
 .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
