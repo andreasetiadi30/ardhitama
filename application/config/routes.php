@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'LandingPage';
 
 // login
-$route['login'] = 'Login/index';
+$route['login'] = 'Login/index'; 
 $route['login/submit'] = 'Login/submit';
 $route['logout'] = 'Login/logout';
 
