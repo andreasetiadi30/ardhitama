@@ -18,8 +18,11 @@
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/fonts/ionicons/css/ionicons.min.css">
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/fonts/fontawesome/css/font-awesome.min.css">
 
+      <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/css/owl.carousel.min.css">
+
       <!-- Theme Style -->
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/css/style.css">
+
     </head>
     <body data-spy="scroll" data-target="#templateux-navbar" data-offset="200">
 
@@ -50,85 +53,29 @@
     </nav>
     <!-- END nav -->
 
-      <section class="site-hero overlay" style="background-image: url(<?php echo base_url();?>assets/landing_page/images/bg-0.jpg)" data-stellar-background-ratio="0.5" id="section-home">
-        <div class="container">
-          <div class="row site-hero-inner justify-content-center align-items-center">
-            <div class="col-md-10 text-center">
-              <p class="text-white" style="font-size: 80px;">Ardhitama Trans</p>
-              <p class="text-white" style="font-size: 30px; margin-top: -50px;">"Satisfaction is Yours!"</p>
-            </div>
-          </div>
-        </div>
 
-        <a class="mouse smoothscroll" href="#next">
-          <div class="mouse-icon">
-            <span class="mouse-wheel" id="next"></span>
-          </div>
-        </a>
-      </section>
-      <!-- END section -->
-
-      <section class="section bg-light pb-0"  >
-        <div class="container">
-         
-          <div class="row check-availabilty">
-            <div class="block-32" data-aos-offset="-200">
-
-              <form action="#">
-                <div class="row">
-                  <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
-                    <div class="field-icon-wrap">
-                      <div class="icon"><span class="icon-calendar"></span></div>
-                      <input type="text" id="checkin_date" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
-                    <div class="field-icon-wrap">
-                      <div class="icon"><span class="icon-calendar"></span></div>
-                      <input type="text" id="checkout_date" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
-                    <div class="row">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label for="adults" class="font-weight-bold text-black">Adults</label>
-                        <div class="field-icon-wrap">
-                          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                          <select name="" id="adults" class="form-control">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4+</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label for="children" class="font-weight-bold text-black">Children</label>
-                        <div class="field-icon-wrap">
-                          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                          <select name="" id="children" class="form-control">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4+</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 align-self-end">
-                    <button class="btn btn-primary btn-block text-white">Pesan</button>
-                  </div>
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo base_url();?>assets/landing_page/images/bg-0.jpg');">
+          <div class="container">
+              <div class="row site-hero-inner justify-content-center align-items-center">
+                <div class="col-md-10 text-center">
+                  <p class="text-white" style="font-size: 80px;">Ardhitama Trans</p>
+                  <p class="text-white" style="font-size: 30px; margin-top: -50px;">"Satisfaction is Yours!"</p>
                 </div>
-              </form>
-            </div>
-
-
+              </div>
           </div>
-        </div>
-      </section>
+      </div>
+      <div class="slider-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo base_url();?>assets/landing_page/images/bg-2.jpg');">
+          <div class="container">
+              <div class="row site-hero-inner justify-content-center align-items-center">
+                <div class="col-md-10 text-center">
+                  <p class="text-white" style="font-size: 80px;">Ardhitama Trans</p>
+                  <p class="text-white" style="font-size: 30px; margin-top: -50px;">"Satisfaction is Yours!"</p>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
 
       <section class="py-5 bg-light" id="section-about">
         <div class="container" style="padding-top: 80px;">
@@ -450,6 +397,11 @@
         </div>
       </footer>
 
+      <div class="footer">
+        <a href="https://wa.me/6289687562012?text=Saya%20tertarik%20dengan%20bis%20anda">
+          <img src="<?php echo base_url();?>assets/landing_page/images/whatsapp.png" alt="" height="60">
+        </a>
+      </div>
       
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery-3.3.1.min.js"></script>
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery-migrate-3.0.1.min.js"></script>
@@ -468,5 +420,7 @@
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery.timepicker.min.js"></script> 
 
       <script src="<?php echo base_url();?>assets/landing_page/js/main.js"></script>
+
+      <script src="<?php echo base_url();?>assets/landing_page/js/owl.carousel.min.js"></script>
     </body>
   </html>
