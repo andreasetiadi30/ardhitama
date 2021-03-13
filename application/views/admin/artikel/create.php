@@ -1,4 +1,5 @@
     <div class="main-panel">
+      <form action='<?php echo base_url().'artikel/store'; ?>' method="post">
       <div class="content">
         <div class="panel-header bg-primary-gradient">
           <div class="page-inner py-5">
@@ -36,6 +37,7 @@
           </div>   
         </div>
       </div>
+    </form>
     </div>
      
   

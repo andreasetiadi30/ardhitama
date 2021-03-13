@@ -29,24 +29,30 @@
 					              <table id="tableArtikel" class="table table-sm table-hover text-center">
 					                <thead class="bg-primary text-white">
 					                  <tr>
-					                    <th class="py-2">No. Absen</th>
+					                    <th class="py-2">No.</th>
 					                    <th class="py-2">Judul Artikel</th>
 					                    <th class="py-2">Last Edit</th>
 					                    <th class="py-2">Action</th>
 					                  </tr>
 					                </thead>
 					                <tbody>
-					                  <?php for ($i=0; $i < 17; $i++) { ?>
-					                    <tr>
-					                      <td><?= $i + 1 ?></td>
-					                      <td>Skidipapap</td>
-					                      <td>09-03-2021</td>
-					                      <td>
-					                      	<a href="<?php echo base_url().'artikel/edit/' ?>" class="btn btn-sm btn-outline-primary" role="button"><i class="fas fa-edit mx-2"></i></a>
-					                      	<a href="<?php echo base_url().'artikel/delete/' ?>" class="btn btn-sm btn-outline-primary" role="button"><i class="fas fa-trash mx-2"></i></a>
-					                      </td>
-					                    </tr>
-					                  <?php } ?>
+					                  <?php
+							        //include "koneksi.php";
+
+							        if ($artikel){
+							            foreach ($artikel as $art) {
+							          ?>
+							                <tr>
+							                  <td><?php echo $art->idart ?></td>
+							                  <td><?php echo $art->title ?></td>
+							                  <td><?php echo $art->date ?></td>
+							                  <td><a href="<?php echo base_url().'artikel/edit/'.$art->idart; ?>" class="btn btn-info active" role="button">Ubah</a>
+							                  <a href="<?php echo base_url().'artikel/delete/'.$art->idart; ?>" class="btn btn-danger active" role="button">Hapus</a></td>
+							                </tr>
+							        <?php
+							        }
+							      }
+							      ?>  
 					                </tbody>
 					              </table>
 					            </div>
