@@ -14,10 +14,8 @@
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/css/bootstrap-datepicker.css">
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/css/jquery.timepicker.css">
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/css/fancybox.min.css">
-      
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/fonts/ionicons/css/ionicons.min.css">
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/fonts/fontawesome/css/font-awesome.min.css">
-
       <link rel="stylesheet" href="<?php echo base_url();?>assets/landing_page/css/owl.carousel.min.css">
 
       <!-- Theme Style -->
@@ -59,8 +57,8 @@
           <div class="container">
               <div class="row site-hero-inner justify-content-center align-items-center">
                 <div class="col-md-10 text-center">
-                  <p class="text-white" style="font-size: 80px;">Ardhitama Trans</p>
-                  <p class="text-white" style="font-size: 30px; margin-top: -50px;">"Satisfaction is Yours!"</p>
+                  <p class="text-white" style="font-size: 5vw;">Ardhitama Trans</p>
+                  <p class="text-white" style="font-size: 2vw; margin-top: -20px;">"Satisfaction is Yours!"</p>
                 </div>
               </div>
           </div>
@@ -69,8 +67,8 @@
           <div class="container">
               <div class="row site-hero-inner justify-content-center align-items-center">
                 <div class="col-md-10 text-center">
-                  <p class="text-white" style="font-size: 80px;">Ardhitama Trans</p>
-                  <p class="text-white" style="font-size: 30px; margin-top: -50px;">"Satisfaction is Yours!"</p>
+                  <p class="text-white" style="font-size: 5vw;">Ardhitama Trans</p>
+                  <p class="text-white" style="font-size: 2vw; margin-top: -20px;">"Satisfaction is Yours!"</p>
                 </div>
               </div>
           </div>
@@ -80,7 +78,7 @@
       <section class="py-5 bg-light" id="section-about">
         <div class="container" style="padding-top: 80px;">
           <div class="row align-items-center">
-            <div class="col-md-12 col-lg-6 ml-auto order-lg-2 position-relative mb-5">
+            <div class="col-md-12 col-lg-6 ml-auto order-lg-2 position-relative text-center mb-5">
               <img src="<?php echo base_url();?>assets/landing_page/images/logo.png" alt="Image" class="img-fluid rounded">
             </div>
             <div class="col-md-12 col-lg-6 order-lg-1">
@@ -109,7 +107,7 @@
             <div class="row">
 
               <div class="col-md-4">
-                <div class="card border-white bg-transparent text-white" style="height: 370px;">
+                <div class="card border-white bg-transparent text-white my-2" style="height: 370px;">
                   <div class="card-body">
                     <img src="<?php echo base_url();?>assets/landing_page/images/bus.png" class="my-5" alt="" height="80">
                     <p class="card-text font-weight-bold" style="font-size: 20px;">SEWA BUS PARIWISATA</p>
@@ -118,7 +116,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border-white bg-transparent text-white" style="height: 370px;">
+                <div class="card border-white bg-transparent text-white my-2" style="height: 370px;">
                   <div class="card-body">
                     <img src="<?php echo base_url();?>assets/landing_page/images/traveller.png" class="my-5" alt="" height="80">
                     <p class="card-text font-weight-bold" style="font-size: 20px;">PAKET WISATA</p>
@@ -127,7 +125,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border-white bg-transparent text-white" style="height: 370px;">
+                <div class="card border-white bg-transparent text-white my-2" style="height: 370px;">
                   <div class="card-body">
                     <img src="<?php echo base_url();?>assets/landing_page/images/shirt.png" class="my-5" alt="" height="80">
                     <p class="card-text font-weight-bold" style="font-size: 20px;">KONVEKSI</p>
@@ -411,16 +409,11 @@
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery.stellar.min.js"></script>
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery.fancybox.min.js"></script>
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery.easing.1.3.js"></script>
-      
-      
-      
       <script src="<?php echo base_url();?>assets/landing_page/js/aos.js"></script>
-      
       <script src="<?php echo base_url();?>assets/landing_page/js/bootstrap-datepicker.js"></script> 
       <script src="<?php echo base_url();?>assets/landing_page/js/jquery.timepicker.min.js"></script> 
-
       <script src="<?php echo base_url();?>assets/landing_page/js/main.js"></script>
-
       <script src="<?php echo base_url();?>assets/landing_page/js/owl.carousel.min.js"></script>
+
     </body>
   </html>

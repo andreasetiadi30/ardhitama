@@ -396,7 +396,7 @@ textarea.form-control {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: calc(100vh - 117px);
+    height: 100vh;
     min-height: 700px;
     position: relative; }
     .owl-carousel.home-slider .slider-item .slider-text {
