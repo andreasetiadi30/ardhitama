@@ -1,4 +1,5 @@
     <div class="main-panel">
+      <form action="<?php echo base_url().'artikel/update/'.$artikel->idart; ?>" method="post">
       <div class="content">
         <div class="panel-header bg-primary-gradient">
           <div class="page-inner py-5">
@@ -17,14 +18,14 @@
                 <div class="card-body">
                   <div class="card-header">
                   <label class="col-lg-3 col-sm-3 control-label">Judul Artikel</label>
-                  <input type="text" class="form-control" name="judul" id="judul" oninvalid="alert('Mohon Tuliskan Judul Artikel!');" required placeholder="Tuliskan Judul Artikel">
+                  <input type="text" class="form-control" name="title" id="title" value="<?php echo $artikel->title; ?>" oninvalid="alert('Mohon Tuliskan Judul Artikel!');" required placeholder="Tuliskan Judul Artikel">
                   </div>
-
                   <div class="card-body pad">
-                  
                   <label class="col-lg-3 col-sm-3 control-label">Isi Artikel</label>
-                  <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  <textarea class="textarea" name="article" id="article" placeholder="Place some text here"
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                  <?php echo $artikel->article; ?>
+                  </textarea>
                   </div>
                   <div class="modal-footer">
                   <button class="btn btn-info" type="submit"> Simpan&nbsp;</button>
@@ -37,8 +38,10 @@
           </div>   
         </div>
       </div>
+    </form>
     </div>
-     
+
+    
   
     
     

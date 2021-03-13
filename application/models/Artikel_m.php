@@ -5,10 +5,6 @@ class Artikel_m extends CI_Model {
 	function __construct(){
         parent::__construct();
     }
-	// public function getAllArtikel(){
-	// 	$result = $this->db->get('articles');
-	// 	return $result->result();
-	// }
 
 	public function getAllArtikel(){
 		$result = $this->db->get('articles');
